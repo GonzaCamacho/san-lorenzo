@@ -6,131 +6,97 @@
 }
 
 body{
-    text-align: center;
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
     min-height: 100vh;
+    flex-direction: column;
+    font-weight: bolder;
+    background-color: whitesmoke;
+    letter-spacing: 1px;
+    display: flex;
+    text-align: center;
 }
 
-nav ul{
-    width: 100%;
-    height: 100px;
-    background-color: rgb(25, 25, 121);
-    padding: 5px;
+.color-nav{
+    background-color: rgb(26, 26, 168);
 }
 
-nav ul li{
-    list-style-type: none;
-
-}
-
-a{
-    text-decoration: none;
-    text-transform: uppercase;
+.colorenlace{
     color: white;
-    letter-spacing: 2px;
 }
 
-.noticias{
+.viejo-gasometro{
     width: 100%;
-    height: 40%;
-
 }
 
-.noticias h1{
-    font-weight: 1.5em;
-    letter-spacing: 1px;
+.viejo-gasometro h1{
+    background-color: rgb(190, 37, 37);
     padding: 10px;
-    background-color: rgb(184, 27, 27);
+    font-weight: bolder;
+    font-size: 1.5em;
 }
 
-.foto-martegani{
-    width: 80%;
-    height: 60%;
-    margin-top: 10px;
+.foto-gasometro{
+    height: 80%;
+    width: 90%;
     border: 5px solid black;
 }
 
-.noticias h2{
+.viejo-gasometro p{
+    font-family:'Noto Sans', sans-serif;
+}
+
+.nuevo-gasometro h2{
+    font-size: 1.5em;
+    background-color: rgb(190, 37, 37);
+    font-weight: bolder;
     padding: 10px;
 }
 
-.noticias p{
-    font-family: 'Noto Sans', sans-serif;
-    padding: 10px;
-    letter-spacing: 1px;
-    margin-left: 5px;
-    margin top: 5px;
-}
-
-.jugador{
-    width: 80%;
-    height: 60%;
-    margin-top: 10px;
+.nuevo-gasometro img{
+    height: 80%;
+    width: 90%;
     border: 5px solid black;
 }
 
-.amistosos{
-    height: 70%;
-}
-
-.amistosos h3{
-    padding: 30px;
-    font-size: 2em;
-}
-
-.amistosos p{
+.nuevo-gasometro p{
+    margin-top: 10px;
     font-family: 'Noto Sans', sans-serif;
-    margin-left: 5px;
-    margin-right: 5px;
+}
+
+.proyecto h3{
+    font-weight: bolder;
+    font-size: 1.5em;
+    background-color: rgb(190, 37, 37);
     padding: 10px;
-    letter-spacing: 1px;
+}
+
+.proyecto img{
+    height: 80%;
+    width: 90%;
+    border: 5px solid black;
+}
+
+.proyecto p{
+    margin-top: 10px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.escudo img{
+    margin-top: 10px;
+    padding: 10px;
+    height: 50%;
+    width: 50%;
 }
 
 .redes{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: rgb(34, 33, 33);
     padding: 10px;
+    background-color: rgb(34, 33, 33);
+    margin-top: 10px;
 }
 
-nav{
-    grid-area: nav;
-}
-
-.noticias{
-    grid-area: noticias;
-}
-
-.amistosos{
-    grid-area: amistosos;
-}
-
-.redes{
-    grid-area: footer;
-}
-
-.grilla-general{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "nav"
-    "noticias"
-    "amistosos"
-    "footer";
-}
-
-@media (min-width: 480px){
-    .grilla-general{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "nav       nav"
-        "noticias  noticias"
-        "amistosos amistosos"
-        "footer    footer";
-    }
+@media (min-width 480px){
+    
 }
