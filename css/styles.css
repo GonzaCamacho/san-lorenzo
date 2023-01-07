@@ -30,7 +30,7 @@ body{
 
 .viejo-gasometro h1{
     background-color: rgb(190, 37, 37);
-    padding: 10px;
+    padding: 0.6em;
     font-weight: bolder;
     font-size: 1.5em;
 }
@@ -49,7 +49,7 @@ body{
     font-size: 1.5em;
     background-color: rgb(190, 37, 37);
     font-weight: bolder;
-    padding: 10px;
+    padding: 0.6em;
 }
 
 .nuevo-gasometro img{
@@ -59,7 +59,7 @@ body{
 }
 
 .nuevo-gasometro p{
-    margin-top: 10px;
+    margin-top: 0.6em;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -67,7 +67,7 @@ body{
     font-weight: bolder;
     font-size: 1.5em;
     background-color: rgb(190, 37, 37);
-    padding: 10px;
+    padding: 0.6em;
 }
 
 .proyecto img{
@@ -77,13 +77,13 @@ body{
 }
 
 .proyecto p{
-    margin-top: 10px;
+    margin-top: 0.6em;
     font-family: 'Noto Sans', sans-serif;
 }
 
 .escudo img{
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 0.6em;
+    padding: 0.6em;
     height: 50%;
     width: 50%;
 }
@@ -97,6 +97,117 @@ body{
     margin-top: 10px;
 }
 
-@media (min-width 480px){
-    
+@media (min-width: 480px){
+
+.foto-gasometro{
+    margin-top: 1em;
+}
+
+.viejo-gasometro p{
+    margin-top: -1.5em;
+}
+
+.nuevo-gasometro img{
+    margin-top: 1em;
+}
+
+.nuevo-gasometro p{
+    margin-top: -1.5em;
+}
+
+.proyecto img{
+    margin-top: 1em;
+}
+
+.proyecto p{
+    margin-top: -3em;
+}
+
+.escudo{
+    border-top: 20px solid rgb(34, 33, 33);
+}
+
+}
+
+@media (min-width: 768px){
+
+.viejo-gasometro p{
+    margin-top: 0em;
+}
+
+.nuevo-gasometro img{
+    margin-top: 10em;
+    height: 60%;
+}
+
+.nuevo-gasometro p{
+    margin-top: 0em;
+}
+
+.proyecto p{
+    margin-top: 0em;
+}
+
+.proyecto img{
+    margin-top: 5em;
+}
+}
+
+@media (min-width: 1024px){
+
+.navbar-brand:hover{
+    color: rgb(196, 192, 192) !important;
+}
+
+.nav-link:hover{
+    color: rgb(196, 192, 192) !important;
+}
+
+.foto-gasometro{
+    margin-top: 2em;
+}
+
+.nuevo-gasometro p{
+    margin-top: 0em;
+}
+
+.nuevo-gasometro img{
+    margin-top: 10em;
+    height: 60%;
+}
+
+.proyecto img{
+    height: 60%;
+    margin-top: 10em;
+}
+
+.proyecto p{
+    margin-top: 0em;
+}
+
+}
+
+@media (min-width: 1200px){
+
+.viejo-gasometro p{
+    margin-top: 5em;
+}
+
+.nuevo-gasometro img{
+    margin-top: 6em;
+}
+
+.nuevo-gasometro p{
+    padding: 3em;
+}
+
+.proyecto p{
+    padding: 1em;
+    margin-top: 10em;
+}
+
+.proyecto img{
+    margin-top: 5em;
+}
+
 }
