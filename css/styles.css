@@ -197,6 +197,10 @@ body{
     margin-top: 0em;
 }
 
+.escudo img{
+    height: 80%;
+}
+
 }
 
 @media (min-width: 1200px){
@@ -220,11 +224,6 @@ body{
 
 .proyecto img{
     margin-top: 5em;
-}
-
-.escudo img{
-    height: 50%;
-    width: 50%;
 }
 
 }
@@ -397,6 +396,10 @@ footer{
 .amistosos img{
     width: 60%;
     height: 70%;
+}
+
+.escudo img{
+    height: 80%;
 }
 }
 
