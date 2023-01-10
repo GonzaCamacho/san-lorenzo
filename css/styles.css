@@ -141,7 +141,7 @@ body{
 
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px){    
 
 .viejo-gasometro p{
     margin-top: 0em;
@@ -222,8 +222,12 @@ body{
     margin-top: 5em;
 }
 
+.escudo img{
+    height: 50%;
+    width: 50%;
 }
 
+}
 
 .noticias h1{
     font-size: 1.5em;
@@ -247,6 +251,8 @@ body{
 
 .noticias p{
     font-family: 'Noto Sans', sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 
@@ -264,6 +270,24 @@ body{
 
 .amistosos p{
     font-family: 'Noto Sans', sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.escudo{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(161,8,8,1) 50%, rgba(2,0,36,1) 100%);
+}
+
+.escudo img{
+    margin-top: 0.6em;
+    padding: 0.6em;
+    height: 50%;
+    width: 50%;
+}
+
+header{
+    grid-area: header;
 }
 
 .navbar{
@@ -278,6 +302,156 @@ body{
     grid-area: amistosos;
 }
 
-.redes{
+.escudo{
+    grid-area: escudo;
+}
+
+footer{
     grid-area: footer;
+}
+
+@media (min-width: 480px){
+    .grilla-general{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "header    header"
+        "nav       nav"
+        "noticias  noticias"
+        "amistosos amistosos"
+        "escudo    escudo"
+        "footer    footer";
+    }
+
+.noticias img{
+    height: 50%;
+    margin-top: 1em;
+}
+
+.amistosos img{
+    height: 50%;
+}
+
+.amistosos{
+    margin-top: 14em;
+    padding: 1em;
+}
+
+.escudo img{
+    margin-top: 6em;
+    height: 70%;
+}
+}
+
+@media (min-width: 768px){
+    .grilla-general{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header    header    header"
+        "nav       nav       nav"
+        "noticias  noticias  noticias"
+        "amistosos amistosos amistosos"
+        "escudo    escudo    escudo"
+        "footer    footer    footer";
+    }
+
+
+.noticias p{
+    padding: 3em;
+}
+
+.amistosos{
+    border-top: 3em solid rgb(34, 33, 33);
+    padding: 3em;
+}
+
+.amistosos h3{
+    padding: 1em;
+}
+
+.amistosos p{
+    padding: 1em;
+}
+
+.escudo{
+    border-bottom: 0px;
+}
+}
+
+@media (min-width: 1024px){
+    .grilla-general{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header    header    header"
+        "nav       nav       nav"
+        "noticias  noticias  noticias"
+        "amistosos amistosos amistosos"
+        "escudo    escudo    escudo"
+        "footer    footer    footer";
+    }
+
+.noticias img{
+    width: 60%;
+}
+
+.amistosos img{
+    width: 60%;
+    height: 70%;
+}
+}
+
+.plantel-profesional h1{
+    font-size: 1.5em;
+    background-color: rgb(165, 27, 27) ;
+    font-weight: bolder;
+    padding: 0.6em;
+    border: 2px solid black;
+}
+
+.fotos-plantel h2{
+    font-size: 2em;
+    padding: 1.5em;
+    font-weight: bolder;
+    color: red;
+}
+
+.fotos-plantel h3{
+    font-size: 2em;
+    padding: 1.5em;
+    font-weight: bolder;
+    color: red;
+}
+
+.fotos-plantel h4{
+    font-size: 2em;
+    padding: 1.5em;
+    font-weight: bolder;
+    color: red;
+}
+.fotos-plantel h5{
+    font-size: 2em;
+    padding: 1.5em;
+    font-weight: bolder;
+    color: red;
+}
+
+.fotos-plantel h6{
+    font-size: 2em;
+    padding: 1.5em;
+    font-weight: bolder;
+    color: red;
+}
+
+.fotos-plantel img{
+    height: 20%;
+    width: 15%;
+    padding: 1em;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: rgb(34, 33, 33);
 }
