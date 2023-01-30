@@ -1,0 +1,8 @@
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+.escudo img{
+    @include sizes (50%, 50%);
+}

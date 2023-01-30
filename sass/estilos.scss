@@ -1,20 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&family=Noto+Sans:ital,wght@0,200;1,400&display=swap');
+@import "variablesGlobal";
+@import "operaciones";
+@import "generales";
+@import "index";
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    min-height: 100vh;
-    flex-direction: column;
-    font-weight: bolder;
-    background-color: whitesmoke;
-    letter-spacing: 1px;
-    display: flex;
-    text-align: center;
-}
 
 .color-nav{
     background-color: rgb(24, 24, 143);
@@ -33,7 +22,7 @@ body{
 }
 
 .viejo-gasometro h1{
-    background-color: rgb(165, 27, 27);
+    background-color: $color;
     padding: 0.6em;
     font-weight: bolder;
     font-size: 1.5em;
@@ -52,7 +41,7 @@ body{
 
 .nuevo-gasometro h2{
     font-size: 1.5em;
-    background-color: rgb(165, 27, 27) ;
+    background-color: $color;
     font-weight: bolder;
     padding: 0.6em;
     border: 2px solid black;
@@ -72,7 +61,7 @@ body{
 .proyecto h3{
     font-weight: bolder;
     font-size: 1.5em;
-    background-color: rgb(165, 27, 27);
+    background-color: $color;
     padding: 0.6em;
     border: 2px solid black;
 }
@@ -106,9 +95,15 @@ body{
     justify-content: space-evenly;
     padding: 10px;
     background-color: rgb(34, 33, 33);
+    margin-top: 0em;
 }
 
 @media (min-width: 480px){
+
+.escudo{
+    margin-bottom: -1em;
+}
+
 
 .foto-gasometro{
     margin-top: 1em;
@@ -137,6 +132,10 @@ body{
 .escudo{
     border-top: 20px solid rgb(34, 33, 33);
     border-bottom: 20px solid rgb(34, 33, 33);
+}
+
+.redes{
+    margin-top: 0em;
 }
 
 }
@@ -228,32 +227,6 @@ body{
 
 }
 
-.noticias h1{
-    font-size: 1.5em;
-    background-color: rgb(165, 27, 27) ;
-    font-weight: bolder;
-    padding: 0.6em;
-    border: 2px solid black;
-}
-
-.noticias h2{
-    font-size: 1.5em;
-    padding: 0.6em;
-    font-weight: bolder
-}
-
-.noticias img{
-    height: 80%;
-    width: 90%;
-    border: 5px solid black;
-}
-
-.noticias p{
-    font-family: 'Noto Sans', sans-serif;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 
 .amistosos img{
     height: 80%;
@@ -340,6 +313,10 @@ footer{
     margin-top: 6em;
     height: 70%;
 }
+
+.redes{
+    margin-top: 0em;
+}
 }
 
 @media (min-width: 768px){
@@ -403,52 +380,44 @@ footer{
 }
 }
 
+//..plantel..//
+
 .plantel-profesional h1{
     font-size: 1.5em;
-    background-color: rgb(165, 27, 27) ;
+    background-color: $color;
     font-weight: bolder;
     padding: 0.6em;
     border: 2px solid black;
 }
 
-.fotos-plantel h2{
-    font-size: 2em;
+
+.fotos-plantel h2 {
+    font-size: 1.7em;
     padding: 1.5em;
     font-weight: bolder;
     color: red;
 }
 
-.fotos-plantel h3{
-    font-size: 2em;
-    padding: 1.5em;
-    font-weight: bolder;
-    color: red;
-}
-
-.fotos-plantel h4{
-    font-size: 2em;
-    padding: 1.5em;
-    font-weight: bolder;
-    color: red;
-}
-.fotos-plantel h5{
-    font-size: 2em;
+.fotos-plantel h3, h4, h5{
+    font-size: 1.7em;
     padding: 1.5em;
     font-weight: bolder;
     color: red;
 }
 
 .fotos-plantel h6{
-    font-size: 2em;
+    font-size: 1.7em;
     padding: 1.5em;
     font-weight: bolder;
     color: red;
+    text-transform: uppercase;
 }
 
+
 .fotos-plantel img{
-    height: 20%;
-    width: 15%;
-    padding: 1em;
+    height: 40%;
+    width: 40%;
+    padding: 0.5em;
 }
 
 .redes{
@@ -457,4 +426,169 @@ footer{
     justify-content: space-evenly;
     padding: 10px;
     background-color: rgb(34, 33, 33);
+}
+
+
+@media (min-width: 480px){
+
+.fotos-plantel img{
+    height: 35%;
+    width: 35%;
+    padding: 0.5em;
+}
+
+}
+
+@media (min-width: 768px){
+
+.fotos-plantel img{
+    height: 30%;
+    width: 30%;
+    padding: 0.5em;
+}
+
+}
+
+@media (min-width: 1024px){
+
+.fotos-plantel img{
+    height: 25%;
+    width: 25%;
+    padding: 0.5em;
+}
+
+}
+
+//..historia..//
+
+.fundador h1{
+    font-size: 1.5em;
+    background-color: $color;
+    font-weight: bolder;
+    padding: 0.6em;
+    border: 2px solid black;
+}
+
+.fundador p{
+    padding: 1em;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.francisco h2{
+    font-size: 1.5em;
+    background-color: $color;
+    font-weight: bolder;
+    padding: 0.6em;
+    border: 2px solid black;
+}
+
+.francisco img{
+    width: 90%;
+    height: 80%;
+    border: 2px solid black;
+}
+
+.francisco p{
+    margin-top: -0.80em;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+@media (min-width: 480px){
+
+.francisco p{
+    margin-top: -2.7em;
+}
+
+.redes{
+    margin-top: 1em;
+}
+
+}
+
+@media (min-width: 768px){
+
+.francisco p{
+    margin-top: -4em;
+}
+
+}
+
+
+@media (min-width: 1024px){
+
+.fundador p{
+    font-size: 1.2em;
+}
+
+.francisco p{
+    margin-top: -6em;
+    font-size: 1.2em;
+}
+
+}
+
+
+//..Titulos..//
+
+ul li{
+    list-style-type: none;
+}
+
+.copas h1{
+    font-size: 1.5em;
+    background-color: $color;
+    font-weight: bolder;
+    padding: 0.6em;
+    border: 2px solid black;
+}
+
+.copas p{
+    padding: 1em;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.copas img{
+    width: 90%;
+    height: 80%;
+    border: 2px solid black;
+}
+
+.campeonatos, h2, h3, h4, h5{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.locales, .nacionales{
+    color: red;
+}
+
+.campeonatos ul li{
+    font-family: 'Noto Sans', sans-serif;
+    padding: 1em;
+}
+
+@media (min-width: 480px){
+
+.copas img{
+    height: 90%;
+}
+
+}
+
+@media (min-width: 768px){
+
+.copas p{
+    font-size: 1.2em;
+}
+
+}
+
+@media (min-width: 1024px){
+
+.copas img{
+    height: 90%;
+    width: 70%;
+}
+
 }
