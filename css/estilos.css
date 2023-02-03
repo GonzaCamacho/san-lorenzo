@@ -445,8 +445,14 @@ footer {
 }
 
 @media (min-width: 480px) {
+  .francisco h2 {
+    margin-top: 1em;
+  }
   .francisco p {
     margin-top: -2.7em;
+  }
+  .francisco img {
+    margin-top: 1em;
   }
   .redes {
     margin-top: 1em;
